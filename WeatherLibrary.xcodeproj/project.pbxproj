@@ -60,7 +60,7 @@
 		42BD31AC16F28D3B0067C2AC /* JGWLCurrentWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGWLCurrentWeather.m; sourceTree = "<group>"; };
 		42BD31B016F28D9C0067C2AC /* JGWLWundergroundServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGWLWundergroundServer.h; sourceTree = "<group>"; };
 		42BD31B116F28D9C0067C2AC /* JGWLWundergroundServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGWLWundergroundServer.m; sourceTree = "<group>"; };
-		42BD31B316F28E3D0067C2AC /* WUNDERGROUND_API_KEY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUNDERGROUND_API_KEY.h; sourceTree = "<group>"; };
+		42BD31B316F28E3D0067C2AC /* WUNDERGROUND_API_KEY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WUNDERGROUND_API_KEY.h; path = ../WeatherLibrary/WUNDERGROUND_API_KEY.h; sourceTree = "<group>"; };
 		42BD31BC16F2A18E0067C2AC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		42BD31BF16F2A1CA0067C2AC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4DA7B9CDAC3F44ABB804DCB4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +146,6 @@
 		42BD313C16F28B5D0067C2AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				42BD31B316F28E3D0067C2AC /* WUNDERGROUND_API_KEY.h */,
 				42BD313D16F28B5D0067C2AC /* WeatherLibrary-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -164,6 +163,7 @@
 		42BD315116F28B5E0067C2AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42BD31B316F28E3D0067C2AC /* WUNDERGROUND_API_KEY.h */,
 				42BD315216F28B5E0067C2AC /* WeatherLibraryTests-Info.plist */,
 				42BD315316F28B5E0067C2AC /* InfoPlist.strings */,
 			);

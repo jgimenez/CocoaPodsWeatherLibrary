@@ -8,15 +8,14 @@
 
 #import "JGWLWundergroundServer.h"
 #import "AFJSONRequestOperation.h"
-#import "WUNDERGROUND_API_KEY.h"
 #import "NSObject+JTObjectMapping.h"
 
 NSString *const kWundergroundServerCitySpainBarcelona = @"Spain/Barcelona";
 
 @implementation JGWLWundergroundServer
 
-- (id)init {
-    NSString * base = [NSString stringWithFormat:@"http://api.wunderground.com/api/%@/", WUNDERGROUND_API_KEY];
+- (id)initWithApiKey:(NSString*)apiKey {
+    NSString * base = [NSString stringWithFormat:@"http://api.wunderground.com/api/%@/", apiKey];
     self = [super initWithBaseURL:[NSURL URLWithString:base]];
     if (self != nil) {
         [self registerHTTPOperationClass:[AFJSONRequestOperation class]];

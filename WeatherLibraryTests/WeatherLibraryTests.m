@@ -7,8 +7,9 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import "JGWLWundergroundServer.h"
 #import <SenTestingKitAsync/SenTestingKitAsync.h>
+#import "WUNDERGROUND_API_KEY.h"
+#import "JGWLWundergroundServer.h"
 
 @interface WeatherLibraryTests : SenTestCase
 
@@ -23,7 +24,7 @@
     [super setUp];
     
     // Set-up code here.
-    self.server = [[JGWLWundergroundServer alloc] init];
+    self.server = [[JGWLWundergroundServer alloc] initWithApiKey:WUNDERGROUND_API_KEY];
 }
 
 - (void)tearDown
